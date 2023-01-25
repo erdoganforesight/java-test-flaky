@@ -15,7 +15,7 @@ public class TestMagicBuilder {
     @Test
     public void testLuckyForAlwaysFail() {
         sleep();
-        assertEquals(1, 1);
+        assertEquals(1, 2);
     }
 
     @Test
