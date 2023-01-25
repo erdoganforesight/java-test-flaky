@@ -5,9 +5,9 @@ name: Lab WorkflowKit/TestKit Flaky
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
   schedule:
     - cron: '0 */01 * * *'
 
@@ -38,7 +38,6 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           cache: maven
-          ref: rerun
       - name: Build with Maven
         run: mvn clean install
       - name: Analyze Test and/or Coverage Results
