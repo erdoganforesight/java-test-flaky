@@ -9,4 +9,9 @@ public class MagicBuilder {
     public static int getLucky(int bound) {
         return random.nextInt(bound);
     }
+    
+    
+    public static int getUnLucky(int bound) {
+        return random.nextInt(bound);
+    }
 }
